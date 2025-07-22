@@ -38,7 +38,7 @@ func Connect() error {
 	}
 
 	DB = db
-	fmt.Println("✅ Database connected successfully")
+	fmt.Println(" Database connected successfully")
 	return nil
 }
 
@@ -52,6 +52,6 @@ func Migrate() error {
 	if err != nil {
 		return fmt.Errorf("failed to run auto migration: %w", err)
 	}
-	fmt.Println("✅ Database migration completed")
+	fmt.Println("Database migration completed")
 	return nil
 }
